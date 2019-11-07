@@ -60,7 +60,7 @@ class Corresponsal inherits Vendedor {
 	var property ciudadadesSucursales = #{}
 	
 	override method puedeTrabajarEn(ciudad) {
-		return ciudadadesSucursales.any({sucursal => sucursal==ciudad})
+		return ciudadadesSucursales.contains(ciudad)
 	}
 	
 	override method esInfluyente() {
